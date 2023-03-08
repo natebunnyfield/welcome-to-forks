@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Forks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+    <style>
+        #content {
+            padding: 1em 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h2>Welcome to Forks</h2>
+        <p>There are two options for forking this application’s repository to your GitHub account.</p>
+        <dl>
+            <dt><a href="{{ github_fork_url }}">Fork this application at github.com</a></dt>
+            <dd>This is safer and almost recommended.</li>
+            </dd>
+            <dt><a href="{{  github_oauth_url }}?scope={{ github_scope }}&client_id={{ github_client_id }}">Fork
+                    this application using the app itself</a></dt>
+            <dd>This is riskier, but is an actual demonstration of a web service.</dd>
+        </dl>
+
+    </div>
+
+</body>
+
+</html>
